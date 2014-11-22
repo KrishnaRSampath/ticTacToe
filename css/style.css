@@ -6,4 +6,8 @@ canvas {
 	border-width: 1px;
 }
 
+.firstBoxInRow {
+	/* set this to float to the next line,
+	   to avoid using <br> tags*/
+}
 
