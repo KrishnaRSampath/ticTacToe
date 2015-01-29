@@ -34,22 +34,21 @@ function boxClicked(boxNumber) {
 
 	if (gameOver == false) {
 		if(filledBoxes[boxNumber] == false) {
+			
+			context.fillStyle = "#000";
+			context.textAlign = "center";
+			context.font = "bold 150px Tahoma";
+			context.textBaseline = "top";
+			
 			if(turn%2==0) {
-				context.fillStyle = "#000";
-				context.textAlign = "center";
-				context.font = "bold 150px Tahoma";
-				context.textBaseline = "top";
 				context.fillText("X", 150, -20);
 				content[boxNumber] = 'X';
 			}
 			else {
-			context.fillStyle = "#000";
-				context.textAlign = "center";
-				context.font = "bold 150px Tahoma";
-				context.textBaseline = "top";
 				context.fillText("O", 150, -20);
 				content[boxNumber] = 'O';	
 			}
+
 			turn++;
 			squaresFilled++;
 			filledBoxes[boxNumber] = true;
