@@ -3,7 +3,6 @@ var filledBoxes;
 var content;
 
 var b;
-var squaresFilled = 0;
 var turn = 0;
 
 var context; //must set this for canvas
@@ -50,7 +49,7 @@ function boxClicked(boxNumber) {
 			}
 
 			turn++;
-			squaresFilled++;
+
 			filledBoxes[boxNumber] = true;
 		}
 
