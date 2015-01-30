@@ -22,7 +22,6 @@ window.onload = function() {
 		filledBoxes[i] = false;
 		content[i] = '';
 	}
-
 }
 
 
@@ -60,7 +59,10 @@ function boxClicked(boxNumber) {
 
 function checkVictory(playerIcon) {
 	for (var i = 0; i < winningMoves.length; i++) {
-		if ((content[winningMoves[i][0]]==playerIcon)&&(content[winningMoves[i][1]]==playerIcon)&&(content[winningMoves[i][2]]==playerIcon)) {
+
+		if ((content[winningMoves[i][0]]==playerIcon)&&
+			(content[winningMoves[i][1]]==playerIcon)&&
+			(content[winningMoves[i][2]]==playerIcon)) {
 			alert(playerIcon + " wins!");
 			gameOver = true;
 			location.reload(true);
